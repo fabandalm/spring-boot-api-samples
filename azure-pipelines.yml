@@ -11,7 +11,7 @@ pool: local-machine
 steps:
 - checkout: self
 - script: pwd
-- script: ls -l
+- script: $(Build.SourcesDirectory)/spring-boot-api-samples/ && ls -l
 - task: JavaToolInstaller@0
   inputs:
       versionSpec: '11' # string. Required. JDK version. Default: 8.
