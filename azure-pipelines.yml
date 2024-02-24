@@ -9,7 +9,7 @@ trigger:
 pool: local-machine
 
 steps:
-- checkout: self
+- checkout: git//:fabandalm/spring-boot-api-samples
 - script: cat $(System.DefaultWorkingDirectory)/pom.xml
 - script: ls -l $(Build.Repository.LocalPath)
 - task: JavaToolInstaller@0
