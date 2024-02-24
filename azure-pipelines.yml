@@ -6,8 +6,7 @@
 trigger:
 - main
 
-pool:
-  vmImage: local-machine
+pool: local-machine
 
 steps:
 - task: Maven@3
