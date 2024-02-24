@@ -11,7 +11,7 @@ pool: local-machine
 steps:
 - checkout: self
 - script: pwd
-- script: ls -l $(Build.Repository.LocalPath)
+- script: ls -l $(Build.Repository.LocalPath)/src
 - task: JavaToolInstaller@0
   inputs:
       versionSpec: '11' # string. Required. JDK version. Default: 8.
@@ -20,7 +20,7 @@ steps:
       jdkFile: "/Users/falmeida/env-dev/open-jdk-binaries/JAVA_HOME_11_X64_microsoft-jdk-11.0.22-macos-x64_tar.gz/jdk-11.0.22+7/Contents/Home/homefolder.zip"
 - task: Maven@4
   inputs:
-    mavenPomFile: 'spring-boot-app/pom.xml'
+    mavenPomFile: '/pom.xml'
     publishJUnitResults: true
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
     javaHomeOption: 'JDKVersion'
