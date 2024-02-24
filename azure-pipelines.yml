@@ -20,7 +20,7 @@ steps:
       jdkFile: "/Users/falmeida/env-dev/open-jdk-binaries/JAVA_HOME_11_X64_microsoft-jdk-11.0.22-macos-x64_tar.gz/jdk-11.0.22+7/Contents/Home/homefolder.zip"
 - task: Maven@3
   inputs:
-    mavenPomFile: '$(Build.SourcesDirectory)/spring-boot-api-samples/pom.xml'
+    mavenPomFile: '$(Build.SourcesDirectory)/pom.xml'
     mavenOptions: '-Xmx3072m'
     javaHomeOption: 'JDKVersion'
     jdkVersionOption: '1.11'
