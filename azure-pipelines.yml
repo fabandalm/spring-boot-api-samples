@@ -20,7 +20,7 @@ steps:
 - task: Bash@3
   inputs:
     targetType: 'inline'
-    script: 'echo "##vso[task.setvariable variable=M2_HOME]/opt/maven"'
+    script: 'echo "##vso[task.setvariable variable=JAVA_HOME]/JAVA_HOME_17_X64_homefolder_zip" && echo "##vso[task.setvariable variable=M2_HOME]/opt/maven"'
 - task: Bash@3
   inputs:
     targetType: 'inline'
