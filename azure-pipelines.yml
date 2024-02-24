@@ -10,6 +10,8 @@ pool: local-machine
 
 steps:
 - checkout: self
+- script: pwd
+- script: ls -l
 - task: JavaToolInstaller@0
   inputs:
       versionSpec: '11' # string. Required. JDK version. Default: 8.
