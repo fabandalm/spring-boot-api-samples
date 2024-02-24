@@ -14,6 +14,11 @@ steps:
 - task: Bash@3
   inputs:
     targetType: 'inline'
+    script: 'echo "##vso[task.setvariable variable=JAVA_HOME_17_X64]/Users/falmeida/Library/Java/JavaVirtualMachines/corretto-17.0.10/Contents/Home"'
+
+- task: Bash@3
+  inputs:
+    targetType: 'inline'
     script: 'echo "##vso[task.setvariable variable=JAVA_HOME]/Users/falmeida/Library/Java/JavaVirtualMachines/corretto-17.0.10/Contents/Home" && echo "##vso[task.setvariable variable=M2_HOME]/usr/local/Cellar/maven/3.9.6/libexec"'
 - task: Bash@3
   inputs:
