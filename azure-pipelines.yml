@@ -10,7 +10,6 @@ pool: local-machine
 
 steps:
 - checkout: self
-  path: $(System.DefaultWorkingDirectory)/fabandalm/spring-boot-api-samples
 
 - task: JavaToolInstaller@0
   inputs:
