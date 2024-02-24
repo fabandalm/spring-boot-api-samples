@@ -10,7 +10,6 @@ pool: local-machine
 
 steps:
 - checkout: self
-  path: $(System.DefaultWorkingDirectory)
 
 - task: JavaToolInstaller@0
   inputs:
