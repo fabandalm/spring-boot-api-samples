@@ -21,6 +21,7 @@ steps:
 - task: Maven@4
   inputs:
     mavenPomFile: 'pom.xml'
+    goals: 'package'
     javaHomeOption: 'JDKVersion'
     mavenVersionOption: 'Default'
     mavenAuthenticateFeed: false
