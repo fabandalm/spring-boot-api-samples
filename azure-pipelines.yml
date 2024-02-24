@@ -11,12 +11,6 @@ pool: local-machine
 steps:
 - checkout: self
 
-- task: JavaToolInstaller@0
-  inputs:
-      versionSpec: '17' # string. Required. JDK version. Default: 8.
-      jdkArchitectureOption: 'x64' #| 'x86'. Required. JDK architecture.
-      jdkSourceOption: LocalDirectory
-      jdkFile: "/Users/falmeida/env-dev/open-jdk-binaries/JAVA_HOME_11_X64_microsoft-jdk-11.0.22-macos-x64_tar.gz/jdk-11.0.22+7/Contents/Home/homefolder.zip"
 - task: Bash@3
   inputs:
     targetType: 'inline'
