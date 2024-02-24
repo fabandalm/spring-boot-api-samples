@@ -10,7 +10,7 @@ pool: local-machine
 
 steps:
 - checkout: self
-- script: pwd
+- script: cat $(System.DefaultWorkingDirectory)/pom.xml
 - script: ls -l $(Build.Repository.LocalPath)
 - task: JavaToolInstaller@0
   inputs:
