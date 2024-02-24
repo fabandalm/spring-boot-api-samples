@@ -12,8 +12,8 @@ steps:
 - task: JavaToolInstaller@0
   inputs:
       versionSpec: '17' # string. Required. JDK version. Default: 8.
-      jdkArchitectureOption: # 'x64' | 'x86'. Required. JDK architecture.
-      jdkSourceOption:
+      jdkArchitectureOption: 'x64' #| 'x86'. Required. JDK architecture.
+      jdkSourceOption: LocalDirectory
 - task: Maven@3
   inputs:
     mavenPomFile: 'pom.xml'
