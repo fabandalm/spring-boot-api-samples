@@ -19,7 +19,7 @@ steps:
   inputs:
     targetType: 'inline'
     script: 'echo "##vso[task.setvariable variable=PATH]$(M2_HOME)/bin:$(PATH)"'
-- script: pwd && ls -l
+- script: ls -l $(Pipeline.Workspace)
 - task: Maven@3
   inputs:
     mavenPomFile: 'pom.xml'
